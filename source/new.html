@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Đây là tiêu đề</title>
+        <meta charset="utf8" />
+        <link rel="stylesheet" href="main.css" />
+        <style>
+            .box2{
+                width: 50%;
+                height: 100px;
+                background-color: red;
+
+            }
+            .box2::after{
+                content: "HT";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            a::after{
+                content:"("attr(href)")";
+            }
+            h1:hover{
+                color: cyan;
+            }
+            .box1 {
+                width: 100%;
+                height: 100px;              
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+                padding: 10px;
+                border: 20px solid rebeccapurple;
+                border: chartreuse;
+            }
+            .box1{
+                background-color: burlywood;
+            }
+            img{
+                width: 1000px;
+                height: auto;
+            }
+            div{
+
+                width: 100%;
+                background-color:rgba(255,255,255, 0,5);
+            }
+           .parent {
+               position: relative;
+               width: 100%;
+           }
+
+           .child{
+               position: absolute;
+               display: none;
+           }
+
+           .open:hover .child{
+                display: block;
+           }
+        </style>
+        
+    </head>
+    <body>
+        <div>
+        <!-- <div class="box box1">box1</div>
+        <div class="box box2" data-title="Đây là red" ></div>
+        <a href="https://atpsoftware.con.vn">Chuyển trang</a> -->
+        <div class="parent">
+            <div>
+                <div class="open">Kekek</div>
+                <div class="child">KIKIKI</div>
+            </div>
+        </div>
+        </div>
+        
+    </body>
+</html>
